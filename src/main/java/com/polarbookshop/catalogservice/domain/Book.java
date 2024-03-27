@@ -16,11 +16,10 @@ public record Book (
         String title,
         @NotBlank(message = "The book author must be defined."
         )
+        String author,
 
         @NotNull(message = "The book price must be defined."
         )
-        String author,
-
         @Positive(message = "The book price must be greater than zero."
         )
         Double price
